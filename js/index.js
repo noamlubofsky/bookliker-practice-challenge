@@ -34,14 +34,16 @@ const showBookInfo = (book) => {
     const bookSummary = document.createElement('p')
     bookSummary.innerText = book.description
 
-    const bookUsers = (book.users.username)
+    // const bookUsers = (book.users.username)
+    // console.log(bookUsers)
+
+    const bookUsers = book.filter(book => book.users === username)
     console.log(bookUsers)
 
     const bookLikes = document.createElement('li')
     bookLikes.innerHTML = bookUsers
 
-    // const bookUsers = book.filter(book.user.username)
-    // console.log(bookUsers)
+ 
 
 
 
